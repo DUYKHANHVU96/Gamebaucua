@@ -1,0 +1,95 @@
+/* Căn thẻ body ra giữa màn hình */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao của body bằng chiều cao màn hình */
+    margin: 0; /* Xóa margin mặc định */
+}
+
+/* Tiêu đề chính */
+.h1 {
+    color: #333;
+    
+}
+
+/* Container tổng cho game */
+.game-container {
+    display: inline-block; /* Đảm bảo container co giãn theo nội dung */
+    margin-top: 20px; /* Tạo khoảng cách nhỏ trên */
+}
+
+/* Hình ảnh xúc xắc */
+.dice {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Khoảng cách giữa các hình */
+    margin: 20px 0; /* Tạo khoảng cách trên và dưới */
+}
+
+.dice img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* Các nút điều khiển */
+.controls {
+    margin: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Khu vực đặt cược */
+.bets {
+    margin-top: 20px;
+}
+
+#betContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Khoảng cách giữa các hình */
+}
+
+.bet-item {
+    display: inline-block;
+    text-align: center;
+}
+
+.bet-item img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.bet-item img:hover {
+    border-color: #ff6347;
+}
+
+.bet-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+}
